@@ -1,45 +1,45 @@
-# Ola-Data-Dashboard
-1. Project Title / Headline
+OLA Data Dashboard
+1. Project Title 
 
 🚖 OLA Data Dashboard
 An interactive Power BI dashboard designed to analyze Ola ride booking data with insights on booking volume, cancellations, payments, customer ratings, and ride patterns.
 
-2. Short Description / Purpose
+2. Description 
 
-The OLA Data Dashboard provides a comprehensive view of Ola’s operational performance, offering insights into bookings, cancellations, revenues, customer satisfaction, and ride trends. This dashboard helps monitor ride statistics, payment preferences, and cancellation reasons with dynamic filtering options.
+The OLA Data Dashboard integrates MySQL for data extraction and Power BI for visualization to present a comprehensive view of Ola’s operational performance. It highlights bookings, cancellations, revenues, customer satisfaction, and ride demand trends in an easy-to-analyze format.
 
 3. Tech Stack
 
-The dashboard was built using the following tools and technologies:<br>
+The project was developed using the following tools and technologies:<br>
+• 🗄️ MySQL – Used for querying, cleaning, and extracting data from relational tables.<br>
 • 📊 Power BI Desktop – Main data visualization platform used for report creation.<br>
-• 📂 Power Query – Used for data transformation and cleaning before visualization.<br>
-• 🧠 DAX (Data Analysis Expressions) – Applied for calculated measures, KPIs, and interactive visuals.<br>
-• 📝 Data Modeling – Relationships defined between booking, payment, and cancellation datasets to enable cross-analysis.<br>
-• 📁 File Format – .pbix for development and .png for dashboard previews.
+• 📂 Power Query – Performed ETL (Extract, Transform, Load) for reshaping and preparing MySQL data.<br>
+• 📝 Data Modeling – Established relationships between bookings, payments, cancellations, and ride data.<br>
+• 📁 File Format – .sql scripts for data extraction, .pbix for the Power BI report, .png for dashboard previews.
 
 4. Data Source
 
 Source: Publicly available datasets (online) related to Ola ride bookings, cancellations, and customer trends.
 
-The dataset includes details such as booking counts, revenue by payment method, cancellation reasons, ride distances, customer ratings, and booking status breakdown.
+The raw data was stored in MySQL tables (e.g., bookings, payments, cancellations, vehicles). SQL queries were used to join and aggregate the data, which was then connected to Power BI for visualization.
 
-5. Features / Highlights
+5. Features 
 
 • Business Problem
-Managing ride-hailing services requires continuous monitoring of bookings, cancellations, payment behavior, and customer feedback. Without visualization, identifying trends in cancellations, revenue contribution, or ride volumes can be challenging.
+Without structured analysis, Ola data (bookings, cancellations, payments, ratings) remains siloed in different tables. There is a need for consolidated insights to track performance and customer behavior.
 
 • Goal of the Dashboard
-To create a data-driven, interactive tool that:
+To combine SQL-driven data extraction with Power BI’s interactive visualizations in order to:
 
-Tracks Ola booking performance.
+Monitor Ola’s booking performance.
 
-Identifies key reasons for cancellations.
+Analyze revenue contributions by payment method.
 
-Analyzes revenue patterns by payment method.
+Track cancellation reasons and their impact.
 
-Monitors ride distance and customer satisfaction.
+Study customer satisfaction levels.
 
-Helps in understanding demand trends over time.
+Identify demand patterns across time.
 
 • Walkthrough of Key Visuals
 
@@ -47,7 +47,7 @@ Top KPIs (Header Section)
 
 Total Bookings: 17,692
 
-Succeeded Bookings: 6M
+Succeeded Bookings: 7M
 
 Canceled Bookings: 1,821
 
@@ -56,31 +56,32 @@ Average Customer Rating: 3.99
 Average Ride Distance: 14.16 km
 
 Revenue by Payment Method (Bar Chart)
-Shows booking counts by payment modes (Cash, UPI, Credit Card, Debit Card) – with Cash and UPI dominating transactions.
+SQL query aggregated revenues by payment type → visualized in Power BI (Cash, UPI, Credit Card, Debit Card).
 
 Cancellation Reasons (Bar Chart)
-Breakdown of incomplete rides by reason: Vehicle Breakdown, Customer Demand, Other Issues.
+Counts grouped in SQL by reason (Vehicle Breakdown, Customer Demand, Other Issues).
 
 Booking Status Breakdown (Pie Chart)
-Distribution of booking statuses (Success, Canceled by Driver, Canceled by Customer, Driver Not Found).
+Distribution of statuses (Success, Canceled by Driver, Canceled by Customer, Driver Not Found).
 
 Vehicle Type Filter (Slicer)
-Allows selection across categories like Auto, Bike, eBike, Mini, Prime Plus, Prime Sedan, and Prime SUV.
+Filter rides by vehicle category (Auto, Bike, eBike, Mini, Prime Plus, Prime Sedan, Prime SUV).
 
 Date Filter (Slicer)
-Interactive calendar range selector for analyzing bookings within a specific period.
+Dynamic range selection for analyzing booking counts in any given period.
 
 Ride Volume Over Time (Line Chart)
-Trend line showing booking volume across dates to spot peaks and drops in demand.
+Bookings aggregated daily in MySQL and visualized to track fluctuations in demand.
 
 • Business Impact & Insights
 
-Revenue Analysis: Cash and UPI dominate customer payments, indicating digital adoption trends alongside cash reliance.
+Revenue Trend: Cash and UPI lead as dominant payment options.
 
-Operational Insight: Vehicle breakdowns and customer demand shifts remain major cancellation drivers.
+Operational Bottlenecks: High cancellations due to vehicle breakdowns and demand shifts.
 
-Customer Experience: Average rating of ~4 highlights moderate satisfaction, requiring improvement in service quality.
+Customer Satisfaction: Average rating close to 4, indicating improvement scope.
 
-Demand Monitoring: Ride volume trends help forecast peak usage days for resource allocation.
+Demand Forecasting: Time-based ride volume trends help predict peak demand.
 
 6. Screenshots / Demos
+   https://github.com/balram883/Ola-Data-Dashboard/blob/main/Ola_Dashboard.png
