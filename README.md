@@ -83,5 +83,6 @@ Customer Satisfaction: Average rating close to 4, indicating improvement scope.
 
 Demand Forecasting: Time-based ride volume trends help predict peak demand.
 
-6. Screenshots / Demos
-   https://github.com/balram883/Ola-Data-Dashboard/blob/main/Ola_Dashboard.png
+6. Screenshots
+
+   ![Dashboard Preview](https://github.com/balram883/Ola-Data-Dashboard/blob/main/Ola_Dashboard.png).
